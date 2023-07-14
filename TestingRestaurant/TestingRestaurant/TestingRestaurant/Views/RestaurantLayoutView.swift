@@ -11,50 +11,50 @@ import Foundation
 struct RestaurantLayoutView: View {
     var body: some View {
         ScrollView(.vertical) {
-            VStack(alignment: .center, spacing: 2) {
-                HStack(alignment: .center, spacing: 2) {
+            VStack(alignment: .center, spacing: 8) {
+                HStack(alignment: .center, spacing: 8) {
                     Spacer()
-                    TableButton(tableNo: 1) {}
+                    TableButton(tableNo: 2, isReserved: true) {}
                     Spacer()
-                    TableButton(tableNo: 2) {}
+                    TableButton(tableNo: 2, isReserved: false) {}
                     Spacer()
-                    TableButton(tableNo: 3) {}
-                    Spacer()
-                }
-                HStack {
-                    Spacer()
-                    TableButton(tableNo: 4) {}
-                    Spacer()
-                    TableButton(tableNo: 5) {}
-                    Spacer()
-                    TableButton(tableNo: 6) {}
+                    TableButton(tableNo: 3, isReserved: true) {}
                     Spacer()
                 }
                 HStack {
                     Spacer()
-                    TableButton(tableNo: 7) {}
+                    TableButton(tableNo: 4, isReserved: false) {}
                     Spacer()
-                    TableButton(tableNo: 8) {}
+                    TableButton(tableNo: 5, isReserved: true) {}
                     Spacer()
-                    TableButton(tableNo: 9) {}
-                    Spacer()
-                }
-                HStack {
-                    Spacer()
-                    TableButton(tableNo: 10) {}
-                    Spacer()
-                    TableButton(tableNo: 11) {}
-                    Spacer()
-                    TableButton(tableNo: 12) {}
+                    TableButton(tableNo: 6, isReserved: false) {}
                     Spacer()
                 }
                 HStack {
                     Spacer()
-                    TableButton(tableNo: 13) {}
+                    TableButton(tableNo: 7, isReserved: true) {}
                     Spacer()
-                    TableButton(tableNo: 14) {}
+                    TableButton(tableNo: 8, isReserved: false) {}
                     Spacer()
-                    TableButton(tableNo: 15) {}
+                    TableButton(tableNo: 9, isReserved: true) {}
+                    Spacer()
+                }
+                HStack {
+                    Spacer()
+                    TableButton(tableNo: 10, isReserved: false {}
+                    Spacer()
+                    TableButton(tableNo: 11, isReserved: true) {}
+                    Spacer()
+                    TableButton(tableNo: 12, isReserved: false) {}
+                    Spacer()
+                }
+                HStack {
+                    Spacer()
+                    TableButton(tableNo: 13, isReserved: true) {}
+                    Spacer()
+                    TableButton(tableNo: 14, isReserved: false) {}
+                    Spacer()
+                    TableButton(tableNo: 15, isReserved: true) {}
                     Spacer()
                 }
             }

@@ -28,13 +28,14 @@ struct TableButton: View {
     
     @ViewBuilder
     private func getAvailableButton() -> some View {
-        Button(action: action) {
-            getAvailableButtonLabel()
+        getReservedButton().overlay {
+            Button(action: action) {
+                getAvailableButtonLabel()
+            }
+            .border(.black, width: 1)
+            .cornerRadius(4)
+            .tint(Color("secondary"))
         }
-        .background(content: { getReservedButton() })
-        .border(.black, width: 1)
-        .cornerRadius(4)
-        .tint(Color("secondary"))
     }
     
     @ViewBuilder
